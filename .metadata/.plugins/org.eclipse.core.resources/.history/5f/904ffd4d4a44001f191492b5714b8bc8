@@ -1,0 +1,30 @@
+package if_else_and_conditionals;
+
+import java.util.Scanner;
+public class loops {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		System.out.println("Enter how many times you want to do ");
+		int n= input.nextInt();
+		//for loop
+		for(int i=1;i<=n;i++) {
+			System.out.println("Hello");
+		}
+		//While loop
+		int k=1;
+		while(k<5) {
+			System.out.println(k*k);
+			k++;
+		}
+		//Do while loop
+		int j=1;
+		do {
+			System.out.println("Himanshi");
+			j++;
+		}while(j!=1);
+
+	}
+
+}

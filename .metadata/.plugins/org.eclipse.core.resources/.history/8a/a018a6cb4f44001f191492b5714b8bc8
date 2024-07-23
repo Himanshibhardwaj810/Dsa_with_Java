@@ -1,0 +1,10 @@
+package if_else_and_conditionals;
+
+public class Uppercase_lowercase_check {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

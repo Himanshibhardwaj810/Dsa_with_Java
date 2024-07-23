@@ -1,0 +1,17 @@
+package if_else_and_conditionals;
+
+import java.util.Scanner;
+public class loops {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		int n= input.nextInt();
+		System.out.println("Enter how many times you want to do ");
+		for(int i=1;i<=n;i++) {
+			System.out.println("Hello");
+		}
+
+	}
+
+}

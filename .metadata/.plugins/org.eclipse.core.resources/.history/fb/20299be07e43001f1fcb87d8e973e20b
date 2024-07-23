@@ -1,0 +1,12 @@
+package Java;
+
+import java.util.Scanner;
+public class main {
+	public static void main(String[] args) {
+	
+	 int roll_no=(int)(545.215f);
+	System.out.println(roll_no);
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package cases;
+import java.util.Scanner;
+
+public class switchcases {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+		String fruits= input.next();
+		switch(fruits) {
+		case "Apple":
+			System.out.println("Apple");
+		
+		case "grapes":
+			System.out.println("grapes");
+		
+		case "orange":
+			System.out.println("orange");
+		
+		default:
+			System.out.println("invalid choice");
+		}
+        		   
+           
+	}
+
+}

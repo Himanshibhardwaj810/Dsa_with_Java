@@ -1,0 +1,31 @@
+package functions;
+
+import java.util.Scanner;
+
+public class java_functions {
+	public static void main(String[] args) {
+		 int ans=sum();
+		 System.out.println(ans);
+		
+		greeting();
+	}
+	/*
+	 * access modifier return type name (){
+	 * body
+	 * return statement
+	 * }
+	 */
+	public static int sum() {
+		Scanner in=new Scanner(System.in);
+		System.out.println("Enter two numbers");
+		int a= in.nextInt();
+		int b=in.nextInt();
+		int result=a+b;
+		return result;
+		
+	}
+	public static void greeting() {
+		System.out.println("Hello world");
+	}
+
+}

@@ -1,0 +1,15 @@
+package functions;
+
+public class java_functions {
+	public static void main(String[] args) {
+		sum();
+	}
+	/*
+	 * access modifier return type name (){
+	 * body
+	 * return statement
+	 * }
+	 */
+	
+
+}

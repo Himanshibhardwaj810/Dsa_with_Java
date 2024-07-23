@@ -1,0 +1,32 @@
+package cases;
+import java.util.Scanner;
+
+public class switchcases {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);
+//		String fruits= input.next();
+//		switch(fruits) {
+//		case "Apple" -> System.out.println("Apple");
+//		case "grapes" -> System.out.println("grape");
+//		case "orange" -> System.out.println("orange");
+//		default -> System.out.println("invalid");
+//			
+		int day=input.nextInt();
+		switch(day) {
+		case 1 -> System.out.println("Monday");
+		case 2-> System.out.println("tuesday");
+		case 3-> System.out.println("wednesday");
+		case  4-> System.out.println("Thursday");
+		case  5-> System.out.println("friday");
+		case  6-> System.out.println("saturday");
+		case  7-> System.out.println("sunday");
+		default  -> System.out.println("invalid day");
+		
+		}
+        		   
+           
+	}
+
+}
