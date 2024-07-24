@@ -28,6 +28,22 @@ public class Arraylist {
 		 for(int i=0;i<5;i++) {
 			 System.out.println(list.get(i));//list[i] doesn't work
 		 }
+		 
+		 //creating multidimensional array using array list
+		 
+		 ArrayList<ArrayList<Integer>> darray=new ArrayList();
+		 //initialization
+		 for (int i=0;i<3;i++) {//each row
+			 darray.add(new ArrayList<>());
+			 
+		 }
+		 for (int i=0;i<3;i++) {
+			 for(int j=0;j<3;j++) {
+		           darray.get(i).add(in.nextInt());	 
+			 }
+		 }
+		 System.out.println(darray);
+		 
 
 	}
 
