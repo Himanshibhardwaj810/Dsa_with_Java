@@ -11,23 +11,7 @@ public class arrays {
 		System.out.println(Arrays.toString(arr));
 		swap(arr, 1, 5);// in this case only the elemnt is passed here 1,5 are the indices
 		System.out.println(Arrays.toString(arr));
-		int max = arr[0];// i can assume 0 but it can happen that -ve value exist
-
-		for (int i = 0; i < arr.length; i++) {
-			//edge cases
-			if(arr==null || arr.length==0 ) {
-				System.out.println("eneter valid array");
-			}
-
-			if (arr[i] > max) {
-				max = arr[i];
-
-			}
-
-		}
-		System.out.println("The maximum element is" + max);
-		System.out.println("The maximum element i9n the range is" + maxrange(arr, 2, 6));
-
+		
 	}
 
 	static void swap(int[] arr, int index1, int index2) {
@@ -48,7 +32,7 @@ public class arrays {
 
 	// to find the maximum element in range
 	static int maxrange(int[] arr, int start, int end) {
-		if(arr==null || arr.length==0 || end>start ) {
+		if(arr==null || arr.length==0 || end<start ) {
 			return -1;
 		
 		}
