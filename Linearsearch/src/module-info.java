@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Switch_case {
+module Linearsearch {
 }
