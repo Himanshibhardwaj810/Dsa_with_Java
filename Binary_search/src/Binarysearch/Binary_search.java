@@ -1,4 +1,4 @@
-package Binarydearch;
+package Binarysearch;
 
 public class Binary_search {
 
