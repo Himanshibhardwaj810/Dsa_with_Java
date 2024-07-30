@@ -1,6 +1,6 @@
 package Binarysearch;
 
-public class Questions {
+public class ceiling_and_floor {
 	// find the ceiling number
 	public static void main(String[] args) {
 		int[] arr = { 4, 5, 7, 9, 18 };
