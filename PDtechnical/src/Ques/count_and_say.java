@@ -29,7 +29,7 @@ public class count_and_say {
 			} else {
 				ans += count;
 				ans += prevterm.charAt(i);
-				
+				count=1;
 
 			}
 		}
