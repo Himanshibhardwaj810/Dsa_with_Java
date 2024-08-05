@@ -1,4 +1,4 @@
-package ques;
+package arrays;
 
 import java.util.Arrays;
 

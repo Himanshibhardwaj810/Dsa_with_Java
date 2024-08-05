@@ -4,7 +4,7 @@ public class ceiling_and_floor {
 	// find the ceiling number
 	public static void main(String[] args) {
 		int[] arr = { 4, 5, 7, 9, 18 };
-		int target = 10;
+		int target = 6;
 		//if want to return the index of particular element then just call the function
 		int ceiling=arr[ceiling(arr, target)];
 		System.out.println("the ceiling is " + ceiling);

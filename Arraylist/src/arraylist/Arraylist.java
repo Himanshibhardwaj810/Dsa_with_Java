@@ -21,12 +21,14 @@ public class Arraylist {
 		 Scanner in=new Scanner(System.in);
 		 ArrayList<Integer> list1=new ArrayList(5);
 		 for(int i=0;i<5;i++) {
-			 list.add(in.nextInt());
+			 list1.add(in.nextInt());
 		 }
+		 System.out.println(list1);
+		 
 		 
 		 //to get an element from index
 		 for(int i=0;i<5;i++) {
-			 System.out.println(list.get(i));//list[i] doesn't work
+			 System.out.println(list1.get(i));//list[i] doesn't work
 		 }
 		 
 		 //creating multidimensional array using array list
@@ -39,10 +41,12 @@ public class Arraylist {
 		 }
 		 for (int i=0;i<3;i++) {
 			 for(int j=0;j<3;j++) {
+				
 		           darray.get(i).add(in.nextInt());	 
 			 }
 		 }
 		 System.out.println(darray);
+		 in.close();
 		 
 
 	}

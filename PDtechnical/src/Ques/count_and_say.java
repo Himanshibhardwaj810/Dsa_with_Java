@@ -9,7 +9,6 @@ public class count_and_say {
 
 		int n = 10;
 		for (int i = 1; i <= n; i++) {
-			String output = countandsay(i);
 			System.out.println("Term " + i + ": " + countandsay(i));
 		}
 

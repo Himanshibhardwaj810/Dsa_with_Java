@@ -10,11 +10,14 @@ public class fibonacci_numbers {
 		int n= input.nextInt();
 		int a=0;//previous number
 		int b=1;//current number
+		System.out.print(a+" "+b);
 		int temp;
 		for(int i=2;i<=n;i++) {
 			temp=b;
 			b=a+b;
 			a=temp;
+			System.out.print(" "+b);
+			
 		}
 		System.out.println(b);
 		

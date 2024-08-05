@@ -24,7 +24,7 @@ public class First_and_Last_Position_of_Element {
 		
 		int start=search(nums,target,true);
 		int end=search(nums,target,false);
-		System.out.println(start);
+//		System.out.println(start);
 		
 		ans[0]=start;
 		ans[1]=end;
@@ -50,6 +50,7 @@ public class First_and_Last_Position_of_Element {
 			} else {
 				//potential ans found
 				ans=mid;
+				System.out.println(ans+"hgh");
 				if(findindex) {
 					end=mid-1;//searching for 1st index
 				}else {

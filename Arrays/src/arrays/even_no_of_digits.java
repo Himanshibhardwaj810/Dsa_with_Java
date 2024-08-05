@@ -17,7 +17,7 @@ public class even_no_of_digits {
 		for (int index = 0; index < arr.length; index++) {
 			int element = arr[index];
 			if (even(element)) {
-				count++;
+				count++;//it return the no of elements that are even
 			}
 		}
 		return count;
@@ -28,7 +28,7 @@ public class even_no_of_digits {
 	static boolean even(int element) {
 		int digits = digit(element);
 		if (digits % 2 == 0) {
-			return true;
+			return true;//it return whether the no of digit is even
 		}
 		return false;
 	}
@@ -50,7 +50,7 @@ public class even_no_of_digits {
 			element = element / 10;
 
 		}
-		return count;
+		return count;//it returns the no of digit in element of arr
 	}
 
 	// another way to find digits
