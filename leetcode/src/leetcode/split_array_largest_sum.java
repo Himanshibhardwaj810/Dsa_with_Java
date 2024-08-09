@@ -14,8 +14,8 @@ public class split_array_largest_sum {
     	int start=0;
     	int end=0;
     	for(int i=0;i<nums.length;i++) {//[10,32]
-    		start=Math.max(0,nums[i]);
-    		System.out.println(start);
+    		start=Math.max(start,nums[i]);
+    		
     		end=end+nums[i];
     	}
     	//binary search
