@@ -1,5 +1,5 @@
 package leetcode;
-
+//https://leetcode.com/problems/search-in-rotated-sorted-array/
 public class rotated_binary_search {
 
 	public static void main(String[] args) {
@@ -12,6 +12,7 @@ public class rotated_binary_search {
 		System.out.println(search(arr, target));
 
 	}
+	//this will not work for duplicate values
 	static int search(int[] nums,int target) {
 		//if pivot element doesn't exist
 		int pivot=findpivot(nums);
