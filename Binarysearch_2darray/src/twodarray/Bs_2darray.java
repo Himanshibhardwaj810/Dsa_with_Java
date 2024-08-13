@@ -5,13 +5,13 @@ public class Bs_2darray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[][] arr= {{1,2,3,4},
-				{5,6,7,8},
-				{9,10,11,12},
-				{13,14,15,16}
+		int[][] arr= {{11,22,33,43},
+				{51,62,78,81},
+				{94,101,110,121},
+				{132,145,154,161}
 				
 		};
-		int target=16;
+		int target=132;
 //		System.out.println(Arrays.toString(search(arr,target)));
 		int[] ans=search(arr,target);
 		System.out.println(Arrays.toString(ans));
@@ -21,6 +21,8 @@ public class Bs_2darray {
 		int row=0;
 		int col=arr.length-1;
 		while(row<arr.length&&col>=0) {
+			System.out.println(row+"jds");
+			System.out.println(col+"hvbhbj");
 			if(arr[row][col]==target) {
 				return new int[] {row,col};
 			}else if(arr[row][col]>target) {
