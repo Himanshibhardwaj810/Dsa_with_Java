@@ -43,7 +43,7 @@ class Student{
 	//constructor 
 	Student(){
 	this.rollno=45;
-	this.name="kunal";
+	this.name="kunal";//constructor overloading
 	this.marks=90f;
 	}
 	Student(int roll,String naam,float marks){
