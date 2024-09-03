@@ -5,13 +5,18 @@ public class human {
 	boolean married;
 	String name;
 	static int population;
+
 	public human(int age, boolean married, String name) {
 		
 		this.age = age;
 		this.married = married;
 		this.name = name;
-		this.population+=1;
-	}
+		human.population+=1;
+
 	
+
+
+
+}
 
 }

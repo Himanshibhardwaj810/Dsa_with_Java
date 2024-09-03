@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>static_example</name>
+	<name>Singleton</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1724337465144</id>
+			<id>1725378841759</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
