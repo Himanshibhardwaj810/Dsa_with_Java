@@ -6,8 +6,8 @@ public class Singleton {
 		
 	}
 	 static private Singleton instance;
-	 public Singleton getinstance() {
-		 //check whether instance is cteated or not
+	 public static Singleton getinstance() {
+		 //check whether instance is created or not
 		 if(instance==null) {
 			 instance=new Singleton();
 		 }
