@@ -23,6 +23,10 @@ public class Main {
 		//deletION
 		list.delatindex(2);
 		list.display();
+		list.delFirstindex();
+		list.display();
+		list.dellast();
+		list.display();
 
 	}
 

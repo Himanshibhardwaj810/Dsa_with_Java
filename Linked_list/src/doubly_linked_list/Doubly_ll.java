@@ -71,12 +71,33 @@ public class Doubly_ll {
 		
 		
 	}
+	//Deletion
+	//at first index
+	public void delFirstindex() {
+		if(head!=null) {
+			head=head.next;
+			head.prev=null;
+		}
+	}
+	//at last index
+	public void dellast() {
+		Node last=head;
+		while(last.next!=null) {
+			last=last.next;
+		}
+		while(last.next!=null) {
+			System.out.println("jgg");
+			last.prev.next=null;
+			
+		}
+	}
 	//deletion at particular index
 	public void delatindex(int index) {
 		Node prev=get(index-1);
 		prev.next=prev.next.next;
 		prev.next.prev=prev;
 		System.out.println(prev.value);
+		
 	}
 	//retrieve the node at a specific index
 	public Node get(int index) {

@@ -3360,3 +3360,51 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2024-09-07 20:01:20.239
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: File is not synchronized with the local file system: file:/D:/Users/Asus/eclipse-workspace/Dsa/Queue/src/Queue/Queue.java
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.commitFileBufferContent(ResourceTextFileBuffer.java:284)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.commit(ResourceFileBuffer.java:317)
+	at org.eclipse.ltk.core.refactoring.resource.ResourceChange$ValidationState.saveIfDirty(ResourceChange.java:253)
+	at org.eclipse.ltk.core.refactoring.resource.ResourceChange.isValid(ResourceChange.java:148)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.isValid(CompositeChange.java:241)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.isValid(DynamicValidationStateChange.java:97)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.isValid(CompositeChange.java:241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:295)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.filebuffers 2 274 2024-09-07 20:01:20.242
+!MESSAGE File is not synchronized with the local file system: file:/D:/Users/Asus/eclipse-workspace/Dsa/Queue/src/Queue/Queue.java
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2024-09-07 20:02:09.482
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: File is not synchronized with the local file system: file:/D:/Users/Asus/eclipse-workspace/Dsa/Queue/src/Queue/Queue.java
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.commitFileBufferContent(ResourceTextFileBuffer.java:284)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.commit(ResourceFileBuffer.java:317)
+	at org.eclipse.ltk.core.refactoring.resource.ResourceChange$ValidationState.saveIfDirty(ResourceChange.java:253)
+	at org.eclipse.ltk.core.refactoring.resource.ResourceChange.isValid(ResourceChange.java:148)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.isValid(CompositeChange.java:241)
+	at org.eclipse.jdt.internal.corext.refactoring.changes.DynamicValidationStateChange.isValid(DynamicValidationStateChange.java:97)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.isValid(CompositeChange.java:241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.lambda$0(PerformChangeOperation.java:247)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:295)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:94)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.filebuffers 2 274 2024-09-07 20:02:09.482
+!MESSAGE File is not synchronized with the local file system: file:/D:/Users/Asus/eclipse-workspace/Dsa/Queue/src/Queue/Queue.java
