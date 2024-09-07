@@ -1,7 +1,5 @@
 package doubly_linked_list;
 
-import custom_LL.Linked_list;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -13,6 +11,17 @@ public class Main {
 		list.InsertFirst(25);
 		list.InsertFirst(35);
 		
+		list.display();
+		list.Insertlast(45);
+		list.display();
+		list.Insertlast2(145);
+		list.display();
+		list.displayreverse();
+		//after particular node
+		list.atindex(145, 1000);
+		list.display();
+		//deletION
+		list.delatindex(2);
 		list.display();
 
 	}
