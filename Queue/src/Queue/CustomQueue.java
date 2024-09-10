@@ -1,9 +1,10 @@
 package Queue;
+import Queue.queueException;
 
 public class CustomQueue {
 	protected int[] data;
 	private static final int Default_size = 10;
-	int end = 0;
+	int ptr = 0;
 
 	public CustomQueue() {
 		this(Default_size);//calling constructor with another constructor
@@ -15,19 +16,19 @@ public class CustomQueue {
 	}
 	//overflow
 	public boolean isFull() {
-		return end==data.length;//ptr at last index
+		return ptr==data.length;//ptr at last index//as item is inserted first
 	}
 	//underflow
 	public boolean isEmpty() {
-		return end==0;//ptr at last index
+		return ptr==0;//ptr at last index
 	}
 	//insertion
 	public boolean insert(int item) {
 		if(isFull()) {
 			return false;
 		}
-		data[end]=item;
-		end++;
+		data[ptr]=item;//here item is inserted first 
+		ptr++;
 		return true;
 		
 	}
@@ -38,11 +39,11 @@ public class CustomQueue {
 		}
 		int removed=data[0];
 		//shift the elements to left
-		for(int i=1;i<end;i++) {
+		for(int i=1;i<ptr;i++) {
 			data[i-1]=data[i];
 		}
 		
-		end--;
+		ptr--;
 		return removed;
 	}
 	//the item at front
@@ -54,7 +55,7 @@ public class CustomQueue {
 	}
 	//display
 	public void display() {
-		for(int i=0;i<end;i++) {
+		for(int i=0;i<ptr;i++) {
 			System.out.print(data[i]+"<- ");
 		}
 		System.out.println("end");

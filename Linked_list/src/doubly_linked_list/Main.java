@@ -22,11 +22,13 @@ public class Main {
 		list.display();
 		//deletION
 		list.delatindex(2);
+		System.out.println("gfdc");
 		list.display();
 		list.delFirstindex();
 		list.display();
 		list.dellast();
 		list.display();
+	
 
 	}
 

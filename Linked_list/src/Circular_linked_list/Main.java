@@ -13,6 +13,19 @@ public class Main {
 		list.display();
 		list.delete(25);
 		list.display();
+		list.insertfirst(32);
+		list.display();
+		list.insertlast(321);
+		list.display();
+		System.out.println(list.size);
+		list.insertatIndex(3,141);
+		list.display();
+		list.deletefirst();
+		list.display();
+		list.deletelast();
+		list.display();
+		list.delatindex(2);
+		list.display();
 		
 	}
 

@@ -93,10 +93,17 @@ public class Doubly_ll {
 	}
 	//deletion at particular index
 	public void delatindex(int index) {
-		Node prev=get(index-1);
-		prev.next=prev.next.next;
-		prev.next.prev=prev;
-		System.out.println(prev.value);
+		if(index==0) {
+			delFirstindex();
+			return;
+		}
+		Node node=head;
+		for(int i=0;i<index-1;i++) {
+			node=node.next;
+		}
+		node.next=node.next.next;
+		node.next.prev=node;
+		
 		
 	}
 	//retrieve the node at a specific index

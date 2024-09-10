@@ -1,6 +1,6 @@
 package CircularQueue;
 
-import Queue.queueException;
+
 
 public class CircularQueue {
 		protected int[] data;

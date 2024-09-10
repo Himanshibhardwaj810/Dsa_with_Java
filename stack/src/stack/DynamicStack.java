@@ -6,7 +6,7 @@ public class DynamicStack extends Custom_Stack {
 	}
 
 	public DynamicStack(int size) {
-		super();// it will call Custom_Stack(size);
+		super(size);// it will call Custom_Stack(size);
 	}
 
 	@Override

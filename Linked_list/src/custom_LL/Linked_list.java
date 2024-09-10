@@ -82,11 +82,16 @@ public class Linked_list {
 	// deletion in singly linked list
 	//at first index
 	public int deletefirst() {
+		if(head==null) {
+//			tail=null;
+			return 0;
+		}
+		if(size<=1) {
+			return 0;
+		}
+		
 		int val=head.value;
 		head=head.next;
-		if(head==null) {
-			tail=null;
-		}
 		
 		size--;
 		return val;
@@ -141,22 +146,24 @@ public class Linked_list {
 		return null;
 		
 	}
-//	public int deletelast2() {
-//		if(size<=1) {
-//			return deletefirst();
-//		}
-//		int val=tail.value;
-//		Node temp=head;
-//		for(int i=0;i<size-2;i++) {
-//			temp=temp.next;
-//			
-//		}
-//		tail=temp;
-//		tail.next=null;
-//		size--;
-//		return val;
-//	}
-//	
+	public int deletelast2() {
+		if(size<=1) {
+			return 0;
+		}
+		int val=tail.value;
+		Node temp=head;
+		for(int i=0;i<size-2;i++) {
+			temp=temp.next;
+			
+		}
+		tail=temp;
+		if(tail!=null) {
+		tail.next=null;
+		}
+		size--;
+		return val;
+	}
+	
 
 //to create new node
 	private class Node {
