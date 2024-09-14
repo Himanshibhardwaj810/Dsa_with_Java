@@ -1,16 +1,11 @@
 package Binary_tree;
-import java.util.*;
+import java.util.Scanner;
+
 public class Main {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner scanner=new Scanner(System.in);
-		Binary_trees tree=new Binary_trees();
-		tree.insert(scanner);
-		tree.display();
-		
-		
-
-	}
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        BinaryTree tree = new BinaryTree();
+        tree.populate(sc);
+        tree.display();
+    }
 }
