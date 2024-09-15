@@ -1,5 +1,7 @@
 package custom_LL;
 
+import Linked_list.Linked_list.Node;
+
 //singly linked list
 public class Linked_list {
 
@@ -26,7 +28,26 @@ public class Linked_list {
 		}
 		size++;
 	}
-
+	//reversal of singly linked list
+	public void reverse() {
+		if(head==null || head.next==null) {
+			return;
+		}
+		Node prev=null;
+		Node curr=head;
+		Node next=null;
+		while(curr!=null) {
+			//store the next
+			next=curr.next;
+			curr.next=prev;
+			prev=curr;
+			curr=next;
+		}
+	    // After the loop, prev will be the new head
+	    tail = head; // The old head becomes the new tail
+	    head = prev; // The last node becomes the new head
+	}
+	
 	// to display the linked list or traversal
 	public void display() {
 		Node temp = head;

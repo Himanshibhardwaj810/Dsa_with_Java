@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-        <listEntry value="/Trees/src/Binary_tree/Main.java"/>
+        <listEntry value="/love babbar dsa/src/Linked_list/Main.java"/>
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="1"/>
     </listAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
-    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Binary_tree.Main"/>
-    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="Trees"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Trees"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Linked_list.Main"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="test"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="love babbar dsa"/>
 </launchConfiguration>
