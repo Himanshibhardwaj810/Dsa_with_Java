@@ -1,7 +1,5 @@
 package Linked_list;
 
-
-
 public class duplicates_code {
 
 	Node head;
@@ -26,16 +24,33 @@ public class duplicates_code {
 
 	// find and removal of duplicates
 	public void duplicates() {
-		Node curr=head;
-		while(curr!=null && curr.next!=null) {
-			if(curr.value==curr.next.value) {
-				curr.next=curr.next.next;
+		Node curr = head;
+		while (curr != null && curr.next != null) {
+			if (curr.value == curr.next.value) {
+				curr.next = curr.next.next;
 				size--;
+			} else {
+				// Move to the next node if no duplicate
+				curr = curr.next;
 			}
-			else {
-                // Move to the next node if no duplicate
-                curr = curr.next;
-            }
+		}
+	}
+
+	// unsorted duplicates
+	public void unsorted_duplicates() {
+		Node curr = head;
+		while (curr != null && curr.next != null) {
+			Node newcurr = curr;
+			while (newcurr != null && newcurr.next != null) {
+				if (curr.value == newcurr.next.value) {
+					newcurr.next = newcurr.next.next;
+					size--;
+				} else {
+					// Move to the next node if no duplicate
+					newcurr = newcurr.next;
+				}
+			}
+			curr = curr.next;
 		}
 	}
 
