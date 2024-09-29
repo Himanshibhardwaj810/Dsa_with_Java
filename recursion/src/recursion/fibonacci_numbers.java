@@ -10,7 +10,7 @@ public class fibonacci_numbers {
 	}
 	static int fibo(int n) {
 		if(n<2) {
-			return n;
+			return n;//as fibo of 0 is 0 and 1 is 1
 		}
 		return fibo(n-1)+fibo(n-2);
 	}
