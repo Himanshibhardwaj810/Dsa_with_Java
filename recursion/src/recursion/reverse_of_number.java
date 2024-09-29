@@ -6,6 +6,7 @@ public class reverse_of_number {
 		// TODO Auto-generated method stub
 		reverse(4512);
 		System.out.println(sum);
+		System.out.println(rev2(4321));
 
 	}
 	//1st way
@@ -19,6 +20,22 @@ public class reverse_of_number {
 		sum=sum*10+rem;
 		reverse(n/10);
 		
+	}
+	// 2nd method
+	
+	//when we Need additional variables in the arguments then
+	//we make a new function 
+	static int rev2(int n) {
+		int digits=(int)(Math.log10(n)+1);
+		System.out.println(digits+"hjb");
+		return helper(n,digits);
+	}
+	static int helper(int n, int digits) {
+		if(n%10==n) {
+			return n;
+		}
+		int rem=n%10;
+		return rem*(int)Math.pow(10, digits-1)+helper(n/10,digits-1);
 	}
 
 }
