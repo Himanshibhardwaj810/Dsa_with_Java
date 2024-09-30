@@ -14,6 +14,13 @@ public class linear_search {
 		//for multiple occurencess
 		findallindex(arr,target,0);
 		System.out.println(list);
+		//returning list
+		ArrayList<Integer>list=new ArrayList<>();
+		
+//		ArrayList<Integer> ans=findallindex(arr,target,0,new ArrayList<>());
+		ArrayList<Integer> ans=findallindex(arr,target,0,list);
+		System.out.println(ans);
+		System.out.println(findallindex2(arr,target,0));
 
 	}
 	
@@ -53,5 +60,29 @@ public class linear_search {
 		findallindex(arr,target,index+1);
 	}
 	
+	//another method for returning arraylist
+	static ArrayList<Integer> findallindex(int [] arr,int target,int index,ArrayList<Integer>list) {
+		if(index==arr.length) {
+			return list;
+		}
+		if(arr[index]==target ) {
+			list.add(index);
+		}
+		return findallindex(arr,target,index+1,list);
+	}
+	//when i don't want to pass arraylist in argument
+	static ArrayList<Integer> findallindex2(int [] arr,int target,int index) {
+		ArrayList<Integer>list=new ArrayList<>();
+		if(index==arr.length) {
+			return list;
+		}
+		//containing the ans for specific function call only
+		if(arr[index]==target ) {
+			list.add(index);
+		}
+		ArrayList<Integer> ansfrombelowcalls=findallindex(arr,target,index+1,list);
+		list.addAll(ansfrombelowcalls);
+		return list;
+	}
 
 }
