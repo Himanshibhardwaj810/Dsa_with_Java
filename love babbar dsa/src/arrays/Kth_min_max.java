@@ -7,6 +7,7 @@ public class Kth_min_max {
 	public static void main(String[] args) {
 	//kth min element
 		int[]arr= {25,15,3,12,5};
+		
 		insertion_sort(arr);
 		System.out.println(Arrays.toString(arr));
 		//for kth min

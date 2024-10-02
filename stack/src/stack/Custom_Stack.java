@@ -64,7 +64,7 @@ public class Custom_Stack {
 		if (isEmpty()) {
 			System.out.println("empty");
 		}else {
-		for (int i = 0; i < ptr; i++) {
+		for (int i = 0; i <=ptr; i++) {
 			System.out.print(data[i] + ",");
 		}
 		System.out.println();
