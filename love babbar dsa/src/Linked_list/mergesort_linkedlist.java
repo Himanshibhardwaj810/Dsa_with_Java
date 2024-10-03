@@ -1,9 +1,7 @@
 package Linked_list;
 
-
-
 public class mergesort_linkedlist {
-	 Node head;
+	Node head;
 	private Node tail;
 	private  int size;
 	

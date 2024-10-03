@@ -10,6 +10,7 @@ public class queue_basics {
 		queue.add(145);
 		queue.add(245);
 		queue.add(345);
+		queue.remove();
 		queue.peek();
 		System.out.println(queue);
 		System.out.println(queue.remove());

@@ -1,7 +1,5 @@
 package CircularQueue;
 
-
-
 public class CircularQueue {
 		protected int[] data;
 		private static final int Default_size = 10;

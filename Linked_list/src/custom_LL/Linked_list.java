@@ -119,7 +119,7 @@ public class Linked_list {
 		
 	}
 	//delete at last index
-	
+	ed
 	public int deletelast() {
 		if(size<=1) {
 			deletefirst();

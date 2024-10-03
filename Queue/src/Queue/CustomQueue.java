@@ -1,5 +1,4 @@
 package Queue;
-import Queue.queueException;
 
 public class CustomQueue {
 	protected int[] data;
