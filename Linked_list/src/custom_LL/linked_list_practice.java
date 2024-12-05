@@ -45,7 +45,7 @@ public class linked_list_practice {
 			return;
 		}
 		Node temp=head;
-		for(int i=1;i<index;i++) {
+		for(int i=1;i<index;i++) {//as zero is head itself
 			temp=temp.next;
 		}
 		node.next=temp.next;
@@ -57,9 +57,10 @@ public class linked_list_practice {
 	public void display() {
 		Node temp=head;
 		while(temp!=null) {
-			System.out.println(temp.value+"->");
+			System.out.print(temp.value+"->");
 			temp=temp.next;
 		}
+		System.out.println(size);
 	}
 	//delete last
 	public int deletelast() {
@@ -79,7 +80,11 @@ public class linked_list_practice {
 	//delete at index
 	public int delatindex(int index) {
 		if(index==0) {
-			return 0;
+			if(head==null) {
+				return 0;
+			}
+			head=head.next;
+			size--;
 		}
 		if(index==size-1) {
 			deletelast();

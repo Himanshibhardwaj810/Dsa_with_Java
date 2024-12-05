@@ -10,15 +10,15 @@ public class elementtofind {
 		stack.push(3);
 		stack.push(4);
 		stack.push(1);
-		int find=5;
+		int find=1;
 		System.out.println(find(stack,find));
 
 	}
 	static boolean find(Stack<Integer>stack,int find) {
-		int position=0;
+//		int position=0;
 		while(!stack.isEmpty()) {
 			int current=stack.pop();
-			position++;
+//			position++;
 			if(current==find) {
 				return true;
 			}

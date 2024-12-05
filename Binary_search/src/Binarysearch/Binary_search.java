@@ -18,13 +18,14 @@ public class Binary_search {
 
 		while (start <= end) {//here equal to is because at the end only one index will be left
 			int mid = start + (end - start) / 2;
-			if (target > arr[mid]) {
-				start = mid + 1; //rhs
-			} else if (target < arr[mid]) {
-				end = mid - 1;//lhs
-			} else {
+			if(arr[mid]==target) {
 				return mid;
 			}
+			if (target > arr[mid]) {
+				start = mid + 1; //rhs
+			} else  {
+				end = mid - 1;//lhs
+			} 
 		}
 		//When target is not found
 		return -1;

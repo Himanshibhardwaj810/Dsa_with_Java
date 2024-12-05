@@ -3,7 +3,7 @@ package Circular_linked_list;
 public class Circular_ll {
 	private Node head;
 	private Node tail;
-	 int size;
+	int size;
 	
 
 	public Circular_ll() {

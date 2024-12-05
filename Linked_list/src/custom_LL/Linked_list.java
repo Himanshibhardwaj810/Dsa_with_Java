@@ -1,6 +1,6 @@
 package custom_LL;
 
-import Linked_list.Linked_list.Node;
+
 
 //singly linked list
 public class Linked_list {
@@ -119,7 +119,7 @@ public class Linked_list {
 		
 	}
 	//delete at last index
-	ed
+	
 	public int deletelast() {
 		if(size<=1) {
 			deletefirst();

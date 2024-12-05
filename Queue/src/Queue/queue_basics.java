@@ -16,7 +16,7 @@ public class queue_basics {
 		System.out.println(queue.remove());
 		//Dequeue
 		System.out.println("deque");
-		Deque<Integer> deque=new ArrayDeque();
+		Deque<Integer> deque=new ArrayDeque<>();
 		deque.add(45);
 		deque.add(245);
 		

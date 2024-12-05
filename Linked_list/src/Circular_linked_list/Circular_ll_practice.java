@@ -11,7 +11,6 @@ public class Circular_ll_practice {
 			if(head==null) {
 				head=node;
 				tail=node;
-				node.next=head;
 				size++;
 				return;
 			}
@@ -21,7 +20,7 @@ public class Circular_ll_practice {
 			size++;
 			return;
 		}
-		if(index==size-1) {
+		if(index==size) {
 			if(tail==null) {
 				tail=node;
 				head=node;
@@ -47,15 +46,49 @@ public class Circular_ll_practice {
 	}
 	//display
 	public void display() {
+//		if(head!=null) {
+//			System.out.println("empty");
+//			return;
+//		}
 		Node temp=head;
-		if(head!=null) {
+		
 		do {
 			System.out.println(temp.value+" ");
 			temp=temp.next;
 		}while(temp!=head);
-		}
-	}
 	
+	}
+	//deletion
+	public void delatindex(int index) {
+		if(index==0) {
+			if(head!=null) {
+				
+				tail.next=head.next;
+				head=head.next;
+				size--;
+			}
+		}
+		if(index==size-1) {
+			if(tail!=null) {
+				Node node=head;
+				while(node.next!=tail) {
+					node=node.next;
+				}
+				node.next=head;
+				tail=node;
+				size--;
+				
+			}
+		}
+		Node prev=head;
+		for(int i=0;i<index-1;i++) {
+			prev=prev.next;
+		}
+		prev.next=prev.next.next;
+		size--;
+		
+		
+	}
 	
 	
 	
@@ -82,6 +115,9 @@ public class Circular_ll_practice {
 		list.insert(30, 2);
 		list.display();
 		list.insert(40,1);
+		list.display();
+		list.delatindex(2);
+		System.out.println("hk");
 		list.display();
 		
 

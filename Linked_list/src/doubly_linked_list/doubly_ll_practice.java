@@ -23,10 +23,10 @@ public class doubly_ll_practice {
 	public void atindex(int index,int value) {
 		Node node=new Node( value);
 		Node prev=head;
-		for(int i=0;i<index-1;i++) {
+		for(int i=1;i<index-1;i++) {
 			prev=prev.next;
 		}
-		node.next=prev.next.next;
+		node.next=prev.next;
 		node.prev=prev;
 		prev.next=node;
 		
@@ -50,6 +50,25 @@ public class doubly_ll_practice {
 			System.out.println(last.value);
 			last=last.prev;
 		}
+		
+	}
+	//deletion
+	public void delatindex(int index) {
+		if(index==0) {
+			if(head!=null) {
+				head=head.next;
+				if(head!=null) {
+				head.prev=null;
+				}
+			}
+			return ;
+		}
+		Node temp=head;
+		for(int i=0;i<index;i++) {
+			temp=temp.next;
+		}
+		temp.next=temp.next.next;
+		temp.next.prev=temp;
 		
 	}
 	

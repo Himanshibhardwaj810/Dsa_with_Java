@@ -5,8 +5,8 @@ public class reverse_of_number {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		reverse(4512);
-		System.out.println(sum);
 		System.out.println(rev2(4321));
+		System.out.println(sum);
 
 	}
 	//1st way
@@ -26,7 +26,7 @@ public class reverse_of_number {
 	//when we Need additional variables in the arguments then
 	//we make a new function 
 	static int rev2(int n) {
-		int digits=(int)(Math.log10(n)+1);
+		int digits=(int)(Math.log10(n)+1);//it returns no of digits
 		System.out.println(digits+"hjb");
 		return helper(n,digits);
 	}
