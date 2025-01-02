@@ -1,4 +1,4 @@
-package Linked_list;
+qapackage Linked_list;
 
 public class loop_ll_code {
 	Node head;
