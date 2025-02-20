@@ -28,7 +28,8 @@ public class Bs_2darray {
 			}else if(arr[row][col]>target) {
 				col--;
 			}else {
-				row++;
+				row++;//as we are standing at the last position of row 
+				//and it is less so we have to go to next row for further checking
 			}
 		}
 		return new int[]{-1,-1};
