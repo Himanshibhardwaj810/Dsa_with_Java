@@ -21,24 +21,25 @@ public class another_bs_2d {
 		}
 		return new int[] {-1,-1};
 	}
-	static int[] search(int[][] arr,int target) {
-		int row=arr.length;
-		int col=arr[0].length;
-		
-		if(row==1) {
-			return binarysearch(arr,0,0,col-1,target );
-		}
-		//run the loop till 2 rows are remaining
-		int rstart=0;
-		int rend=row-1;
-		int cmid=col/2;
-		while(rstart<rend-1) {//more than two rows
-			int mid=rstart+(rend-rstart)/2;
-			if(arr  )
-			
-			
-		}
-		
+	static boolean search(int[][] matrix,int target) {
+		 int rows=matrix.length;
+	       int col=matrix[0].length;
+	      for(int i=0;i<matrix.length;i++){//iterate through each row
+	        int start=0;
+	        int end=col-1;
+	        while(start<=end){//apply binary search
+	        int mid=start+(end-start)/2;
+	        if(matrix[i][mid]==target){
+	            return true;
+	        }else if(matrix[i][mid]<target){
+	            start=mid+1;
+	        }else{
+	            end=mid-1;
+	        }
+	      }
+	      }
+	    return false;
+	    //complexity: o(nlogn)
 		
 		
 		
