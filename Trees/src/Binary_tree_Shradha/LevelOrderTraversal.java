@@ -38,16 +38,21 @@ public class LevelOrderTraversal {
 			return newNode;
 		}
 		public static void Bfs(Node root) {
+			if(root==null) {
+				return;//if the root is initally null
+			}
 			Queue<Node>q=new LinkedList<>();
 			q.add(root);//adding root in initial stage
 			q.add(null);//here null represents new line 
 			while(!q.isEmpty()) {
 				Node currNode=q.remove();
 				if(currNode==null) {//if currNode null then we have to print next line
-					System.out.println();
-					if(!q.isEmpty()) {
+					System.out.println();//next line represents next level
+					if(q.isEmpty()) {
+						return;
+					}else {
 						q.add(null);
-					}	
+					}
 				}else {
 					System.out.println(currNode.value+" ");
 					if(currNode.left!=null) {
